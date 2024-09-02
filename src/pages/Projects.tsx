@@ -51,18 +51,18 @@ const ProjectCard: React.FC<Project> = ({
 // Data Projects
 const projects: Project[] = [
   {
-    title: "Project 1",
+    title: "Eredit",
     description:
       "Ini merupakan website yang terinspirasi dari reddit, dengan versi yang bisa diakses.",
-    imageUrl: "/public/Screenshot 2024-08-29 181951.jpg",
-    techStack: ["React", "TypeScript", "TailwindCSS"],
+    imageUrl: "/public/Project1.jpg",
+    techStack: ["React", "Chakra", "TailwindCSS"],
     projectLink: "https://eredit.vercel.app/",
   },
   {
-    title: "Project 2",
+    title: "Web Class",
     description:
       "Website ini dibuat khusus untuk anak kelas XII-RPL-3 agar bisa mengenang kegiatannya atau untuk melihat jadwal.",
-    imageUrl: "/public/Screenshot 2024-08-29 181335.jpg",
+    imageUrl: "/public/Project2.jpg",
     techStack: ["React", "JavaScript", "Tailwind CSS"],
     projectLink: "https://xii-rpl3.vercel.app/",
   },
