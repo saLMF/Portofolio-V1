@@ -54,7 +54,7 @@ const projects: Project[] = [
     title: "Eredit",
     description:
       "Ini merupakan website yang terinspirasi dari reddit, dengan versi yang bisa diakses.",
-    imageUrl: "/public/Project1.jpg",
+    imageUrl: "/Project1.jpg",
     techStack: ["React", "Chakra", "TailwindCSS"],
     projectLink: "https://eredit.vercel.app/",
   },
@@ -62,7 +62,7 @@ const projects: Project[] = [
     title: "Web Class",
     description:
       "Website ini dibuat khusus untuk anak kelas XII-RPL-3 agar bisa mengenang kegiatannya atau untuk melihat jadwal.",
-    imageUrl: "/public/Project2.jpg",
+    imageUrl: "/Project2.jpg",
     techStack: ["React", "JavaScript", "Tailwind CSS"],
     projectLink: "https://xii-rpl3.vercel.app/",
   },

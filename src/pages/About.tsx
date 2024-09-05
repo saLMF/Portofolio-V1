@@ -34,9 +34,15 @@ const AboutMe: React.FC = () => {
           </p>
 
           {/* Tombol Download CV */}
-          <button className="bg-gray-800 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-gray-600 text-lg mb-16">
-            Download CV <i className="fas fa-download"></i>
-          </button>
+          <a
+            href="https://drive.google.com/drive/folders/1MlwN1FTtad_i6CneY9srhEybbDKQLnvH?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-gray-800 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-gray-600 text-lg mb-16">
+              Download CV <i className="fas fa-download"></i>
+            </button>
+          </a>
 
           {/* Kartu Experience dan Project */}
           <div className="flex flex-row space-x-4 w-full max-w-lg">

@@ -1,14 +1,14 @@
 const TechStack = () => {
   const techStackItems = [
-    {name: "HTML", icon: "/public/html.png"},
-    {name: "CSS", icon: "/public/css.png"},
-    {name: "JavaScript", icon: "/public/js.png"},
-    {name: "Tailwind CSS", icon: "/public/TailwindCSS.png"},
-    {name: "ReactTS", icon: "/public/react.png"},
-    {name: "Python", icon: "/public/Python.png"},
-    {name: "Bootstrap", icon: "/public/bootstrap.png"},
-    {name: "Vite", icon: "/public/Vite.js.png  "},
-    {name: "Vercel", icon: "/public/Vercel.png"},
+    {name: "HTML", icon: "/html.png"},
+    {name: "CSS", icon: "/css.png"},
+    {name: "JavaScript", icon: "/js.png"},
+    {name: "Tailwind CSS", icon: "/TailwindCSS.png"},
+    {name: "ReactTS", icon: "/react.png"},
+    {name: "Python", icon: "/Python.png"},
+    {name: "Bootstrap", icon: "/bootstrap.png"},
+    {name: "Vite", icon: "/Vite.js.png  "},
+    {name: "Vercel", icon: "/Vercel.png"},
   ];
 
   return (
