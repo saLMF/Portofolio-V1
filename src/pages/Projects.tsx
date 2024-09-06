@@ -66,6 +66,34 @@ const projects: Project[] = [
     techStack: ["React", "JavaScript", "Tailwind CSS"],
     projectLink: "https://xii-rpl3.vercel.app/",
   },
+  {
+    title: "Movie List",
+    description: "Untuk list fav movie.",
+    imageUrl: "/Project3.jpg",
+    techStack: ["HTML", "CSS", "Python"],
+    projectLink: "",
+  },
+  {
+    title: "Land Mars",
+    description: "Membeli tanah di mars untuk invest tanah.",
+    imageUrl: "/Project4.jpg",
+    techStack: ["HTML", "CSS", "Python"],
+    projectLink: "",
+  },
+  {
+    title: "FanBook",
+    description: "Memberikan support kepada idol tercinta.",
+    imageUrl: "/Project5.jpg",
+    techStack: ["HTML", "CSS", "Python"],
+    projectLink: "",
+  },
+  {
+    title: "Personal Diary",
+    description: "Pengganti diary dari notebook ke website.",
+    imageUrl: "/Project6.jpg",
+    techStack: ["HTML", "CSS", "Python"],
+    projectLink: "",
+  },
 ];
 
 // Komponen Utama Projects
