@@ -56,10 +56,10 @@ const Navbar: React.FC = () => {
             </div>
             <div>
               <button
-                onClick={() => scrollToSection("projects")}
+                onClick={() => scrollToSection("contact")}
                 className="hover:underline text-white"
               >
-                Projects
+                Contact
               </button>
             </div>
           </div>

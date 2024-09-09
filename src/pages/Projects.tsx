@@ -53,7 +53,7 @@ const projects: Project[] = [
   {
     title: "Eredit",
     description:
-      "Ini merupakan website yang terinspirasi dari reddit, dengan versi yang bisa diakses.",
+      "Ini merupakan project website yang dibuat saat kelas 11 dan terinspirasi dari reddit dengan versi yang bisa diakses oleh orang indonesia.",
     imageUrl: "/Project1.jpg",
     techStack: ["React", "Chakra", "TailwindCSS"],
     projectLink: "https://eredit.vercel.app/",
@@ -61,42 +61,65 @@ const projects: Project[] = [
   {
     title: "Web Class",
     description:
-      "Website ini dibuat khusus untuk anak kelas XII-RPL-3 agar bisa mengenang kegiatannya atau untuk melihat jadwal.",
+      "Website ini dibuat saat kelas 11, website ini khusus digunakan oleh siswa RPL3 agar bisa mengenang kegiatan dan melihat jadwal mata pelajaran atau piket.",
     imageUrl: "/Project2.jpg",
-    techStack: ["React", "JavaScript", "Tailwind CSS"],
+    techStack: ["React", "JavaScript", "Tailwind", "CSS"],
     projectLink: "https://xii-rpl3.vercel.app/",
   },
   {
-    title: "Movie List",
-    description: "Untuk list fav movie.",
+    title: "Portofolio V.1",
+    description:
+      "Ini project pertama saat kelas 10 oleh LearningX untuk membuat list favorit movie.",
     imageUrl: "/Project3.jpg",
+    techStack: ["React", "Typescript", "Tailwind", "CSS"],
+    projectLink: "",
+  },
+  {
+    title: "Smart Attendance",
+    description:
+      "Ini project pertama saat kelas 10 oleh LearningX untuk membuat list favorit movie.",
+    imageUrl: "/Project4.jpg",
+    techStack: ["React", "Typescript", "Tailwind", "CSS"],
+    projectLink: "",
+  },
+  {
+    title: "Movie List",
+    description:
+      "Ini project pertama saat kelas 10 oleh LearningX untuk membuat list favorit movie.",
+    imageUrl: "/Project5.jpg",
     techStack: ["HTML", "CSS", "Python"],
     projectLink: "",
   },
   {
     title: "Land Mars",
     description: "Membeli tanah di mars untuk invest tanah.",
-    imageUrl: "/Project4.jpg",
+    imageUrl: "/Project6.jpg",
     techStack: ["HTML", "CSS", "Python"],
     projectLink: "",
   },
   {
     title: "FanBook",
     description: "Memberikan support kepada idol tercinta.",
-    imageUrl: "/Project5.jpg",
+    imageUrl: "/Project7.jpg",
     techStack: ["HTML", "CSS", "Python"],
     projectLink: "",
   },
   {
     title: "Personal Diary",
     description: "Pengganti diary dari notebook ke website.",
-    imageUrl: "/Project6.jpg",
+    imageUrl: "/Project8.jpg",
+    techStack: ["HTML", "CSS", "Python"],
+    projectLink: "",
+  },
+  {
+    title: "Bucket List",
+    description: "Pengganti diary dari notebook ke website.",
+    imageUrl: "/Project9.jpg",
     techStack: ["HTML", "CSS", "Python"],
     projectLink: "",
   },
 ];
 
-// Komponen Utama Projects
 const Projects: React.FC = () => {
   return (
     <section

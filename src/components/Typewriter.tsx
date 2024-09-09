@@ -9,7 +9,7 @@ interface TypewriterProps {
 const Typewriter: React.FC<TypewriterProps> = ({
   texts,
   typingSpeed = 180,
-  pauseTime = 3200,
+  pauseTime = 4200,
 }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [currentTextIndex, setCurrentTextIndex] = useState(0);

@@ -12,7 +12,7 @@ const AboutMe: React.FC = () => {
         {/* Bagian Kiri: Teks "About Me" dan Gambar Profil */}
         <div className="flex-1 flex flex-col items-center">
           <h2 className="text-6xl font-bold mb-6 text-center">ABOUT ME</h2>
-          <div className="mb-6 max-w-md">
+          <div className="mb-6 max-w-sm">
             <img
               src="/Photo.png"
               alt="Profile"
@@ -22,20 +22,21 @@ const AboutMe: React.FC = () => {
         </div>
 
         {/* Bagian Kanan: Deskripsi, Tombol, dan Kartu */}
-        <div className="flex-1 flex flex-col items-center md:items-start">
+        <div className="flex-1 flex-col items-center md:items-start">
           {/* Deskripsi */}
-          <p className="text-xl leading-relaxed mb-16">
-            Saya adalah Faisal Maulud Fajri, seorang siswa yang menekuni bidang
-            Rekayasa Perangkat Lunak dengan fokus pada pengembangan front-end
-            web. Saya memiliki tekad yang kuat untuk terus belajar dan mengasah
-            keterampilan saya demi mencapai kesempurnaan. Selalu berusaha untuk
-            menemukan solusi terbaik dalam setiap proyek yang saya kerjakan dan
-            memiliki minat besar di bidang front-end web.
+          <p className="text-xl leading-relaxed mb-16 mt-20">
+            Nama saya adalah Faisal Maulud Fajri, seorang siswa SMKN 4 Bandung
+            dari kelas industri yang menekuni bidang Rekayasa Perangkat Lunak
+            dengan fokus pada pengembangan front-end web. Saya memiliki tekad
+            yang kuat untuk terus belajar dan mengasah keterampilan saya demi
+            mencapai kesempurnaan. Selalu berusaha untuk menemukan solusi
+            terbaik dalam setiap proyek yang saya kerjakan dan memiliki minat
+            besar di bidang front-end web.
           </p>
 
           {/* Tombol Download CV */}
           <a
-            href="https://drive.google.com/drive/folders/1MlwN1FTtad_i6CneY9srhEybbDKQLnvH?usp=drive_link"
+            href="https://drive.google.com/file/d/1up0nvp0jsV2gakHn57tQf9on3GJZGxwR/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -70,12 +71,13 @@ const AboutMe: React.FC = () => {
         </div>
         <div className="text-center">
           <p className="text-lg leading-relaxed mb-8">
-            Saya adalah Faisal Maulud Fajri, seorang siswa yang menekuni bidang
-            Rekayasa Perangkat Lunak dengan fokus pada pengembangan front-end
-            web. Saya memiliki tekad yang kuat untuk terus belajar dan mengasah
-            keterampilan saya demi mencapai kesempurnaan. Selalu berusaha untuk
-            menemukan solusi terbaik dalam setiap proyek yang saya kerjakan dan
-            memiliki minat besar di bidang front-end web.
+            Nama saya adalah Faisal Maulud Fajri, seorang siswa SMKN 4 Bandung
+            dari kelas industri yang menekuni bidang Rekayasa Perangkat Lunak
+            dengan fokus pada pengembangan front-end web. Saya memiliki tekad
+            yang kuat untuk terus belajar dan mengasah keterampilan saya demi
+            mencapai kesempurnaan. Selalu berusaha untuk menemukan solusi
+            terbaik dalam setiap proyek yang saya kerjakan dan memiliki minat
+            besar di bidang front-end web.
           </p>
           <button className="bg-gray-800 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-gray-600 text-lg mb-8">
             Download CV <i className="fas fa-download"></i>

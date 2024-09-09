@@ -5,7 +5,7 @@ const Home: React.FC = () => {
   return (
     <section
       id="home"
-      className="bg-black text-white h-screen flex items-center justify-between px-10"
+      className="bg-black text-white h-screen flex items-center overflow-hidden justify-between px-10"
     >
       <div className="flex-1 text-center">
         <h5 className="text-[#a6adba] text-2xl">Hello There 👋</h5>

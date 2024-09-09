@@ -1,6 +1,6 @@
 import {useState} from "react";
 import Projects from "../pages/Projects";
-import TechStack from "./TechStack";
+import TechStack from "../pages/TechStack";
 
 const TabsNavigation = () => {
   const [activeTab, setActiveTab] = useState("Project");
