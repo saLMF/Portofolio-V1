@@ -13,37 +13,37 @@ const TechStack = () => {
       name: "HTML",
       icon: "/html.png",
       description:
-        "HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat struktur dasar sebuah halaman web. HTML menentukan elemen-elemen seperti teks, gambar, tautan, dan lainnya. Bagi pemula, HTML adalah fondasi utama dalam pembuatan website, dan cukup mudah dipelajari karena sintaksnya sederhana.",
+        "Saya cukup memahami code-code nya karna ini bahasa dasar dari pembelajaran pemrograman.",
     },
     {
       name: "CSS",
       icon: "/css.png",
       description:
-        "CSS (Cascading Style Sheets) digunakan untuk mengatur tata letak dan tampilan halaman web, seperti warna, font, ukuran, dan posisi elemen. CSS membantu memisahkan konten dari presentasi, sehingga membuat tampilan website lebih menarik. Pemula perlu belajar CSS untuk memahami bagaimana tampilan visual diatur di halaman web.",
+        "Sama seperti HTML, CSS merupakan dasar dengan perbedaan digunakan dalam desain.",
     },
     {
       name: "JavaScript",
       icon: "/js.png",
       description:
-        "JavaScript adalah bahasa pemrograman yang berfungsi untuk menambahkan interaktivitas pada halaman web, seperti membuat tombol berfungsi, menampilkan animasi, atau melakukan validasi form. JavaScript penting bagi pemula yang ingin membuat website dinamis dan interaktif. JavaScript sering digunakan bersama HTML dan CSS.",
+        "Saya cukup memahami javascript untuk pengaplikasian bagian backend.",
     },
     {
       name: "Tailwind CSS",
       icon: "/TailwindCSS.png",
       description:
-        "Tailwind CSS adalah framework CSS berbasis utilitas yang memungkinkan Anda membuat desain tanpa harus menulis CSS dari awal. Tailwind menyediakan kelas-kelas siap pakai untuk mengatur layout, warna, dan tipografi. Untuk pemula, Tailwind CSS memudahkan dalam membuat desain yang fleksibel dan efisien, tanpa harus paham CSS mendalam.",
+        "Tailwind memiliki kesamaan seperti CSS yang bisa dilihat dari namanya dan framework ini cukup dimengerti oleh saya.",
     },
     {
       name: "ReactTS",
       icon: "/react.png",
       description:
-        "ReactTS adalah pustaka JavaScript untuk membangun antarmuka pengguna, namun menggunakan TypeScript sebagai bahasa dasarnya. TypeScript menambahkan tipe data yang lebih aman di atas JavaScript. Pemula yang sudah familiar dengan JavaScript dapat mulai mempelajari React dan TypeScript untuk membangun aplikasi web modern yang lebih terstruktur.",
+        "React cukup saya pahami karena kebanyakan project yang saya kerjakan menggunakan frameweok terbaru ini.",
     },
     {
       name: "Python",
       icon: "/Python.png",
       description:
-        "Python adalah bahasa pemrograman yang sangat populer karena sintaksnya yang sederhana dan mudah dipahami. Python digunakan untuk berbagai keperluan seperti pengembangan web, analisis data, kecerdasan buatan, dan banyak lagi. Bagi pemula, Python adalah pilihan yang bagus untuk belajar pemrograman pertama kali karena mudah dipelajari dan digunakan.",
+        "Python merupakan bahasa pemrograman yang pertama kali saya pelajari dan ini cukup mudah untuk pemula karena bahasanya yang simpel.",
     },
     // {
     //   name: "Bootstrap",

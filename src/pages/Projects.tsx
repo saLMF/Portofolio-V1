@@ -67,53 +67,49 @@ const projects: Project[] = [
     projectLink: "https://xii-rpl3.vercel.app/",
   },
   {
-    title: "Portofolio V.1",
-    description:
-      "Ini project pertama saat kelas 10 oleh LearningX untuk membuat list favorit movie.",
-    imageUrl: "/Project3.jpg",
-    techStack: ["React", "Typescript", "Tailwind", "CSS"],
-    projectLink: "",
-  },
-  {
     title: "Smart Attendance",
     description:
-      "Ini project pertama saat kelas 10 oleh LearningX untuk membuat list favorit movie.",
-    imageUrl: "/Project4.jpg",
+      "Project ini masih dalam tahap pengembangan dan kita akan update lagi bila sudah selesai.",
+    imageUrl: "/Project3.jpg",
     techStack: ["React", "Typescript", "Tailwind", "CSS"],
     projectLink: "",
   },
   {
     title: "Movie List",
     description:
-      "Ini project pertama saat kelas 10 oleh LearningX untuk membuat list favorit movie.",
+      "Ini project pertama saat kelas 10 yang diberikan oleh LearningX menggunakan Python untuk membuat list favorit movie dan list Imdb dengan realtime.",
     imageUrl: "/Project5.jpg",
     techStack: ["HTML", "CSS", "Python"],
     projectLink: "",
   },
   {
     title: "Land Mars",
-    description: "Membeli tanah di mars untuk invest tanah.",
+    description:
+      "Project kedua LearningX yang mengajarkan MongoDB untuk BackEnd agar saat membeli tanah di mars kita bisa melihat siapa saja orang yang sudah membelinya.",
     imageUrl: "/Project6.jpg",
     techStack: ["HTML", "CSS", "Python"],
     projectLink: "",
   },
   {
     title: "FanBook",
-    description: "Memberikan support kepada idol tercinta.",
+    description:
+      "Memberikan support kepada idol yang dikagumi dan ini bisa memperlihatkan temperatur suhu panas atau dinginnya cuaca secara realtime.",
     imageUrl: "/Project7.jpg",
     techStack: ["HTML", "CSS", "Python"],
     projectLink: "",
   },
   {
     title: "Personal Diary",
-    description: "Pengganti diary dari notebook ke website.",
+    description:
+      "Pengganti diary yang biasa dari notebook berpindah ke gadget (website) agar lebih up-to-date.",
     imageUrl: "/Project8.jpg",
     techStack: ["HTML", "CSS", "Python"],
     projectLink: "",
   },
   {
     title: "Bucket List",
-    description: "Pengganti diary dari notebook ke website.",
+    description:
+      "Project ini dibuat untuk kebutuhan list yang diinginkan seperti barang ataupun liburan.",
     imageUrl: "/Project9.jpg",
     techStack: ["HTML", "CSS", "Python"],
     projectLink: "",
