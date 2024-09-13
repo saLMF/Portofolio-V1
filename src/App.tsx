@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import ContactForm from "./components/ContactForm";
+import ContactForm from "./pages/ContactForm";
 import Navbar from "./layouts/Navbar";
 import Footer from "./layouts/Footer";
 
