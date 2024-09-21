@@ -1,13 +1,15 @@
 import React, {useState} from "react";
+import {useForm, ValidationError} from "@formspree/react";
 
 const ContactForm: React.FC = () => {
   const [selectedSocial, setSelectedSocial] = useState("instagram");
+  const [state, handleSubmit] = useForm("mrbzwqno");
 
   const handleSocialClick = (social: string) => {
     setSelectedSocial(social);
   };
 
-  // Fungsi untuk menentukan gambar yang akan ditampilkan berdasarkan sosial media yang dipilih
+  // Function to get the corresponding social media image
   const getImageForSocial = () => {
     switch (selectedSocial) {
       case "instagram":
@@ -23,7 +25,7 @@ const ContactForm: React.FC = () => {
     }
   };
 
-  // Fungsi untuk menentukan URL sosial media yang akan dibuka saat gambar diklik
+  // Function to get the URL for the selected social media
   const getUrlForSocial = () => {
     switch (selectedSocial) {
       case "instagram":
@@ -46,13 +48,19 @@ const ContactForm: React.FC = () => {
     >
       <div className="container max-w-5xl p-8 mx-auto my-10 text-gray-300 bg-black rounded-lg shadow-lg">
         <h1 className="mb-4 text-4xl font-bold text-gray-100">Contact</h1>
-        {/* <p className="mb-8 text-gray-400">Reach me out.</p> */}
+
+        {/* Show notification if form submission succeeded */}
+        {state.succeeded && (
+          <div className="p-4 mb-4 text-green-600 bg-green-200 border border-green-600 rounded-lg">
+            Thanks for reaching out! I'll get back to you soon.
+          </div>
+        )}
 
         <hr className="my-6 border-gray-700" />
 
-        {/* Layout Grid untuk Sosial Media dan Tampilan Handphone */}
+        {/* Grid Layout for Social Media and Form */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {/* Bagian Sosial Media */}
+          {/* Social Media Section */}
           <div>
             <h2 className="mb-4 text-2xl font-semibold text-gray-100">
               Find me on
@@ -70,22 +78,10 @@ const ContactForm: React.FC = () => {
               >
                 <i className="mr-2 fab fa-github"></i> GitHub
               </button>
-              {/* <button
-            onClick={() => handleSocialClick("linkedin")}
-            className="flex items-center px-4 py-2 text-white bg-blue-700 border border-gray-600 rounded-lg hover:bg-blue-800"
-          >
-            <i className="mr-2 fab fa-linkedin"></i> LinkedIn
-          </button> */}
-              {/* <button
-            onClick={() => handleSocialClick("twitter")}
-            className="flex items-center px-4 py-2 text-white bg-black border border-gray-600 rounded-lg hover:bg-gray-800"
-          >
-            <i className="mr-2 fab fa-twitter"></i> Twitter
-          </button> */}
             </div>
           </div>
 
-          {/* Bagian Tampilan Handphone */}
+          {/* Social Media Image Preview */}
           <div className="flex items-center justify-center">
             <a
               href={getUrlForSocial()}
@@ -100,14 +96,13 @@ const ContactForm: React.FC = () => {
             </a>
           </div>
 
-          {/* Bagian Formulir Email */}
+          {/* Email Form with Formspree Integration */}
           <div>
             <h2 className="mb-4 text-2xl font-semibold text-gray-100">
               Or send me an email
             </h2>
             <form
-              action="https://formsubmit.co/faisalmauludfajri1264@gmail.com"
-              method="POST"
+              onSubmit={handleSubmit}
               className="space-y-6"
             >
               <div className="grid grid-cols-1 gap-6">
@@ -119,48 +114,59 @@ const ContactForm: React.FC = () => {
                     Email
                   </label>
                   <input
-                    required
+                    id="email"
                     type="email"
                     name="email"
-                    id="email"
+                    required
                     placeholder="Enter your email"
                     className="w-full px-4 py-3 text-gray-200 bg-black border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
                   />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
                 </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="subject"
-                  className="block mb-2 font-semibold text-gray-400"
-                >
-                  Subject
-                </label>
-                <input
-                  required
-                  type="text"
-                  name="subject"
-                  id="subject"
-                  placeholder="Enter your subject"
-                  className="w-full px-4 py-3 text-gray-200 bg-black border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block mb-2 font-semibold text-gray-400"
-                >
-                  Message
-                </label>
-                <textarea
-                  required
-                  name="message"
-                  id="message"
-                  placeholder="Enter your message"
-                  className="w-full h-40 px-4 py-3 text-gray-200 bg-black border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
-                ></textarea>
+                <div>
+                  <label
+                    htmlFor="subject"
+                    className="block mb-2 font-semibold text-gray-400"
+                  >
+                    Subject
+                  </label>
+                  <input
+                    id="subject"
+                    type="text"
+                    name="subject"
+                    required
+                    placeholder="Enter your subject"
+                    className="w-full px-4 py-3 text-gray-200 bg-black border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block mb-2 font-semibold text-gray-400"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Enter your message"
+                    className="w-full h-40 px-4 py-3 text-gray-200 bg-black border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500"
+                  />
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
+                </div>
               </div>
               <button
                 type="submit"
+                disabled={state.submitting}
                 className="w-full py-3 text-white transition-colors duration-300 bg-gray-800 rounded-lg hover:bg-gray-900"
               >
                 Send Message

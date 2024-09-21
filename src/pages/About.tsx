@@ -5,14 +5,14 @@ const AboutMe: React.FC = () => {
   return (
     <section
       id="about"
-      className="bg-black text-white py-10 px-10"
+      className="px-10 py-10 text-white bg-black"
     >
       {/* Desktop View */}
-      <div className="hidden md:flex items-start justify-between">
+      <div className="items-start justify-between hidden md:flex">
         {/* Bagian Kiri: Teks "About Me" dan Gambar Profil */}
-        <div className="flex-1 flex flex-col items-center">
-          <h2 className="text-6xl font-bold mb-6 text-center">ABOUT ME</h2>
-          <div className="mb-6 max-w-sm">
+        <div className="flex flex-col items-center flex-1">
+          <h2 className="mb-6 text-6xl font-bold text-center">ABOUT ME</h2>
+          <div className="max-w-sm mb-6">
             <img
               src="/Photo.png"
               alt="Profile"
@@ -22,9 +22,9 @@ const AboutMe: React.FC = () => {
         </div>
 
         {/* Bagian Kanan: Deskripsi, Tombol, dan Kartu */}
-        <div className="flex-1 flex-col items-center md:items-start">
+        <div className="flex-col items-center flex-1 md:items-start">
           {/* Deskripsi */}
-          <p className="text-xl leading-relaxed mb-16 mt-20">
+          <p className="mt-20 mb-16 text-xl leading-relaxed">
             Nama saya adalah Faisal Maulud Fajri, seorang siswa SMKN 4 Bandung
             dari kelas industri yang menekuni bidang Rekayasa Perangkat Lunak
             dengan fokus pada pengembangan front-end web. Saya memiliki tekad
@@ -40,18 +40,18 @@ const AboutMe: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-gray-800 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-gray-600 text-lg mb-16">
+            <button className="px-6 py-3 mb-16 text-lg text-white bg-gray-800 rounded-lg shadow-lg hover:bg-gray-600">
               Download CV <i className="fas fa-download"></i>
             </button>
           </a>
 
           {/* Kartu Experience dan Project */}
-          <div className="flex flex-row space-x-4 w-full max-w-lg">
-            <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg text-center flex-1">
+          <div className="flex flex-row w-full max-w-lg space-x-4">
+            <div className="flex-1 p-6 text-center text-white bg-gray-800 rounded-lg shadow-lg">
               <h3 className="text-3xl font-bold">2+</h3>
               <p className="text-xl">Years of Experience</p>
             </div>
-            <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg text-center flex-1">
+            <div className="flex-1 p-6 text-center text-white bg-gray-800 rounded-lg shadow-lg">
               <h3 className="text-3xl font-bold">3+</h3>
               <p className="text-xl">Project Created</p>
             </div>
@@ -61,8 +61,8 @@ const AboutMe: React.FC = () => {
 
       {/* Mobile View */}
       <div className="flex flex-col items-center md:hidden">
-        <h2 className="text-4xl font-bold mb-6 text-center">ABOUT ME</h2>
-        <div className="mb-6 max-w-md">
+        <h2 className="mb-6 text-2xl font-bold text-center">ABOUT ME</h2>
+        <div className="max-w-md mb-6">
           <img
             src="/Photo.png"
             alt="Profile"
@@ -70,7 +70,7 @@ const AboutMe: React.FC = () => {
           />
         </div>
         <div className="text-center">
-          <p className="text-lg leading-relaxed mb-8">
+          <p className="mb-8 text-lg leading-relaxed">
             Nama saya adalah Faisal Maulud Fajri, seorang siswa SMKN 4 Bandung
             dari kelas industri yang menekuni bidang Rekayasa Perangkat Lunak
             dengan fokus pada pengembangan front-end web. Saya memiliki tekad
@@ -79,16 +79,16 @@ const AboutMe: React.FC = () => {
             terbaik dalam setiap proyek yang saya kerjakan dan memiliki minat
             besar di bidang front-end web.
           </p>
-          <button className="bg-gray-800 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-gray-600 text-lg mb-8">
+          <button className="px-6 py-3 mb-8 text-lg text-white bg-gray-800 rounded-lg shadow-lg hover:bg-gray-600">
             Download CV <i className="fas fa-download"></i>
           </button>
         </div>
-        <div className="w-full flex flex-col space-y-4">
-          <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg text-center">
+        <div className="flex flex-col w-full space-y-4">
+          <div className="p-6 text-center text-white bg-gray-800 rounded-lg shadow-lg">
             <h3 className="text-3xl font-bold">2+</h3>
             <p className="text-xl">Years of Experience</p>
           </div>
-          <div className="bg-gray-800 text-white p-6 rounded-lg shadow-lg text-center">
+          <div className="p-6 text-center text-white bg-gray-800 rounded-lg shadow-lg">
             <h3 className="text-3xl font-bold">3+</h3>
             <p className="text-xl">Project Created</p>
           </div>

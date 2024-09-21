@@ -5,7 +5,7 @@ const Home: React.FC = () => {
   return (
     <section
       id="home"
-      className="bg-black text-white h-screen flex items-center overflow-hidden justify-between px-10"
+      className="flex items-center justify-between h-screen px-10 overflow-hidden text-white bg-black"
     >
       <div className="flex-1 text-center">
         <h5 className="text-[#a6adba] text-2xl">Hello There 👋</h5>
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
           <Typewriter texts={["Front-End Developer ", "Student "]} />
         </p>
       </div>
-      <div className="flex-1 flex justify-center">
+      <div className="flex justify-center flex-1">
         <img
           src="/icon.png"
           alt="Coding Illustration"
