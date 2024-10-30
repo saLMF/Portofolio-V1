@@ -69,10 +69,10 @@ const projects: Project[] = [
   {
     title: "Smart Attendance",
     description:
-      "Project ini masih dalam tahap pengembangan dan kita akan update lagi bila sudah selesai.",
+      "Pada kelas 3 ini atau kelas 12, kita membuat aplikasi untuk absensi kepada perusahaan-perusahaan agar lebih efesiensi waktu.",
     imageUrl: "/Project3.jpg",
     techStack: ["React", "Typescript", "TailwindCSS"],
-    projectLink: "/ ",
+    projectLink: "https://smart-att.curaweda.com/",
   },
 ];
 

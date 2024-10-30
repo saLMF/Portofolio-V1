@@ -1,7 +1,24 @@
 import React from "react";
 import TabsNavigation from "../components/Tabs";
+import {Download} from "lucide-react";
 
 const AboutMe: React.FC = () => {
+  const handleDownload = () => {
+    const fileUrl =
+      "https://drive.google.com/file/d/1Cp2pUMJX5KEt9r9pdRgkQwjPQkojg96V/view?usp=drive_link";
+    window.open(fileUrl, "_blank");
+  };
+
+  const DownloadButton = () => (
+    <button
+      onClick={handleDownload}
+      className="flex items-center justify-center gap-2 px-6 py-3 mb-16 text-lg text-white transition-colors duration-200 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-600 active:bg-gray-900 touch-manipulation"
+    >
+      <span>Download CV</span>
+      <Download className="w-5 h-5" />
+    </button>
+  );
+
   return (
     <section
       id="about"
@@ -35,15 +52,7 @@ const AboutMe: React.FC = () => {
           </p>
 
           {/* Tombol Download CV */}
-          <a
-            href="https://drive.google.com/file/d/1up0nvp0jsV2gakHn57tQf9on3GJZGxwR/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="px-6 py-3 mb-16 text-lg text-white bg-gray-800 rounded-lg shadow-lg hover:bg-gray-600">
-              Download CV <i className="fas fa-download"></i>
-            </button>
-          </a>
+          <DownloadButton />
 
           {/* Kartu Experience dan Project */}
           <div className="flex flex-row w-full max-w-lg space-x-4">
@@ -79,8 +88,14 @@ const AboutMe: React.FC = () => {
             terbaik dalam setiap proyek yang saya kerjakan dan memiliki minat
             besar di bidang front-end web.
           </p>
-          <button className="px-6 py-3 mb-8 text-lg text-white bg-gray-800 rounded-lg shadow-lg hover:bg-gray-600">
-            Download CV <i className="fas fa-download"></i>
+
+          {/* Tombol Download CV untuk Mobile */}
+          <button
+            onClick={handleDownload}
+            className="flex items-center justify-center w-full gap-2 px-6 py-3 mb-8 text-lg text-white transition-colors duration-200 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-600 active:bg-gray-900 touch-manipulation"
+          >
+            <span>Download CV</span>
+            <Download className="w-5 h-5" />
           </button>
         </div>
         <div className="flex flex-col w-full space-y-4">

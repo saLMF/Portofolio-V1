@@ -31,7 +31,7 @@ const ContactForm: React.FC = () => {
       case "instagram":
         return "https://www.instagram.com/isaeall/";
       case "github":
-        return "https://github.com/AkaneAqua";
+        return "https://github.com/saLMF";
       case "linkedin":
         return "https://linkedin.com/in/your-profile";
       case "twitter":
