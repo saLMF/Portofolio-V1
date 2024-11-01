@@ -1,15 +1,23 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {useForm, ValidationError} from "@formspree/react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContactForm: React.FC = () => {
   const [selectedSocial, setSelectedSocial] = useState("instagram");
   const [state, handleSubmit] = useForm("mrbzwqno");
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in milliseconds
+    });
+    AOS.refresh();
+  }, []);
+
   const handleSocialClick = (social: string) => {
     setSelectedSocial(social);
   };
 
-  // Function to get the corresponding social media image
   const getImageForSocial = () => {
     switch (selectedSocial) {
       case "instagram":
@@ -25,7 +33,6 @@ const ContactForm: React.FC = () => {
     }
   };
 
-  // Function to get the URL for the selected social media
   const getUrlForSocial = () => {
     switch (selectedSocial) {
       case "instagram":
@@ -45,23 +52,27 @@ const ContactForm: React.FC = () => {
     <section
       id="contact"
       className="px-10 py-10 text-white bg-black"
+      data-aos="fade-up"
     >
-      <div className="container max-w-5xl p-8 mx-auto my-10 text-gray-300 bg-black rounded-lg shadow-lg">
+      <div
+        className="container max-w-5xl p-8 mx-auto my-10 text-gray-300 bg-black rounded-lg shadow-lg"
+        data-aos="fade-up"
+      >
         <h1 className="mb-4 text-4xl font-bold text-gray-100">Contact</h1>
 
-        {/* Show notification if form submission succeeded */}
         {state.succeeded && (
-          <div className="p-4 mb-4 text-green-600 bg-green-200 border border-green-600 rounded-lg">
+          <div
+            className="p-4 mb-4 text-green-600 bg-green-200 border border-green-600 rounded-lg"
+            data-aos="fade-right"
+          >
             Thanks for reaching out! I'll get back to you soon.
           </div>
         )}
 
         <hr className="my-6 border-gray-700" />
 
-        {/* Grid Layout for Social Media and Form */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {/* Social Media Section */}
-          <div>
+          <div data-aos="fade-right">
             <h2 className="mb-4 text-2xl font-semibold text-gray-100">
               Find me on
             </h2>
@@ -81,8 +92,10 @@ const ContactForm: React.FC = () => {
             </div>
           </div>
 
-          {/* Social Media Image Preview */}
-          <div className="flex items-center justify-center">
+          <div
+            className="flex items-center justify-center"
+            data-aos="zoom-in"
+          >
             <a
               href={getUrlForSocial()}
               target="_blank"
@@ -96,14 +109,14 @@ const ContactForm: React.FC = () => {
             </a>
           </div>
 
-          {/* Email Form with Formspree Integration */}
-          <div>
+          <div data-aos="fade-left">
             <h2 className="mb-4 text-2xl font-semibold text-gray-100">
               Or send me an email
             </h2>
             <form
               onSubmit={handleSubmit}
               className="space-y-6"
+              data-aos="fade-up"
             >
               <div className="grid grid-cols-1 gap-6">
                 <div>

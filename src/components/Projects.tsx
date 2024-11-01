@@ -55,7 +55,7 @@ const projects: Project[] = [
     description:
       "Ini merupakan project website yang dibuat saat kelas 11 dan terinspirasi dari reddit dengan versi yang bisa diakses oleh orang indonesia.",
     imageUrl: "/Project1.jpg",
-    techStack: ["React", "Chakra", "TailwindCSS", "NextJS"],
+    techStack: ["React", "TailwindCSS", "NextJS"],
     projectLink: "https://eredit.vercel.app/",
   },
   {

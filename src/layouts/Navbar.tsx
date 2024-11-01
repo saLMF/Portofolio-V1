@@ -35,16 +35,12 @@ const Navbar: React.FC = () => {
       } ${visible ? "translate-y-0" : "-translate-y-full"}`}
     >
       {/* Container dengan padding yang berbeda untuk mobile dan desktop */}
-      <div className="container px-6 mx-auto md:px-8 lg:px-12">
-        {/* Wrapper untuk konten navbar */}
+      <div className="container px-6 mx-auto sm:px-8 lg:px-12">
         <div className="flex items-center justify-between py-4">
-          {/* Logo */}
           <h1 className="text-2xl font-bold">FMF</h1>
-
-          {/* Navigation */}
           <nav className="px-2">
             {/* Desktop Menu */}
-            <div className="hidden md:flex md:space-x-6">
+            <div className="hidden md:flex md:space-x-8">
               <NavButton
                 label="Home"
                 onClick={() => scrollToSection("home")}
@@ -58,9 +54,8 @@ const Navbar: React.FC = () => {
                 onClick={() => scrollToSection("contact")}
               />
             </div>
-
             {/* Mobile Menu */}
-            <div className="flex space-x-4 md:hidden">
+            <div className="flex md:hidden">
               <NavButton
                 label="Home"
                 onClick={() => scrollToSection("home")}
