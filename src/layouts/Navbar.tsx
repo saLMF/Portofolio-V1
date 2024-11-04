@@ -76,7 +76,6 @@ const Navbar: React.FC = () => {
   );
 };
 
-// Komponen Button yang dapat digunakan kembali
 const NavButton: React.FC<{label: string; onClick: () => void}> = ({
   label,
   onClick,

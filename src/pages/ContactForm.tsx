@@ -9,7 +9,7 @@ const ContactForm: React.FC = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in milliseconds
+      duration: 1000,
     });
     AOS.refresh();
   }, []);

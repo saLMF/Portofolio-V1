@@ -1,6 +1,5 @@
 import React from "react";
 
-// Definisikan tipe data untuk Project
 interface Project {
   title: string;
   description: string;
@@ -9,7 +8,6 @@ interface Project {
   projectLink: string;
 }
 
-// Komponen Card untuk Project
 const ProjectCard: React.FC<Project> = ({
   title,
   description,
@@ -54,7 +52,7 @@ const projects: Project[] = [
     title: "Eredit",
     description:
       "Ini merupakan project website yang dibuat saat kelas 11 dan terinspirasi dari reddit dengan versi yang bisa diakses oleh orang indonesia.",
-    imageUrl: "/Images/Project1.jpg",
+    imageUrl: "/images/Project1.jpg",
     techStack: ["React", "TailwindCSS", "NextJS"],
     projectLink: "https://eredit.vercel.app/",
   },
@@ -62,7 +60,7 @@ const projects: Project[] = [
     title: "Web Class",
     description:
       "Website ini dibuat saat kelas 11, website ini khusus digunakan oleh siswa RPL3 agar bisa mengenang kegiatan dan melihat jadwal mata pelajaran atau piket.",
-    imageUrl: "/Images/Project2.jpg",
+    imageUrl: "/images/Project2.jpg",
     techStack: ["React", "JavaScript", "TailwindCSS"],
     projectLink: "https://xii-rpl3.vercel.app/",
   },
@@ -70,7 +68,7 @@ const projects: Project[] = [
     title: "Smart Attendance",
     description:
       "Pada kelas 3 atau kelas 12, kita membuat aplikasi untuk absensi kepada perusahaan-perusahaan agar lebih efesiensi waktu.",
-    imageUrl: "/Images/Project3.jpg",
+    imageUrl: "/images/Project3.jpg",
     techStack: ["React", "Typescript", "TailwindCSS"],
     projectLink: "https://smart-att.curaweda.com/",
   },
