@@ -7,9 +7,9 @@ import "aos/dist/aos.css";
 const AboutMe: React.FC = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Sets the duration of the animation
+      duration: 1000,
     });
-    AOS.refresh(); // Menyegarkan AOS saat komponen di-render
+    AOS.refresh();
   }, []);
 
   const handleDownload = (): void => {
@@ -18,7 +18,6 @@ const AboutMe: React.FC = () => {
     window.open(fileUrl, "_blank");
   };
 
-  // Define the DownloadButton component
   const DownloadButton: React.FC = () => (
     <button
       onClick={handleDownload}
@@ -45,7 +44,7 @@ const AboutMe: React.FC = () => {
           <h2 className="mb-6 text-6xl font-bold text-center">ABOUT ME</h2>
           <div className="max-w-sm mb-6">
             <img
-              src="/Photo.png"
+              src="/images/Photo.png"
               alt="Profile"
               className="rounded-lg shadow-lg"
               data-aos="fade-up"
@@ -58,7 +57,6 @@ const AboutMe: React.FC = () => {
           className="flex-col items-center flex-1 md:items-start"
           data-aos="fade-up"
         >
-          {/* Description */}
           <p className="mt-20 mb-16 text-xl leading-relaxed">
             Nama saya adalah Faisal Maulud Fajri, seorang siswa SMKN 4 Bandung
             dari kelas industri yang menekuni bidang Rekayasa Perangkat Lunak
@@ -68,11 +66,7 @@ const AboutMe: React.FC = () => {
             terbaik dalam setiap proyek yang saya kerjakan dan memiliki minat
             besar di bidang front-end web.
           </p>
-
-          {/* Download CV Button */}
           <DownloadButton />
-
-          {/* Experience and Project Cards */}
           <div className="flex flex-row w-full max-w-lg space-x-4">
             <div
               className="flex-1 p-6 text-center text-white bg-gray-800 rounded-lg shadow-lg"
@@ -102,7 +96,7 @@ const AboutMe: React.FC = () => {
         </h2>
         <div className="max-w-md mb-6">
           <img
-            src="/Photo.png"
+            src="/images/Photo.png"
             alt="Profile"
             className="rounded-lg shadow-lg"
             data-aos="fade-up"
@@ -149,8 +143,6 @@ const AboutMe: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {/* Add the TabsNavigation component here */}
       <div
         className="w-full mt-10"
         data-aos="fade-up"

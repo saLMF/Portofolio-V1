@@ -21,9 +21,9 @@ const ContactForm: React.FC = () => {
   const getImageForSocial = () => {
     switch (selectedSocial) {
       case "instagram":
-        return "/IG.jpeg";
+        return "/images/IG.jpeg";
       case "github":
-        return "/Git.jpeg";
+        return "/images/GitSS.jpeg";
       case "linkedin":
         return "/path-to-your-image/linkedin-image.png";
       case "twitter":

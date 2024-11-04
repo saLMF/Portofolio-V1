@@ -18,7 +18,7 @@ const Home: React.FC = () => {
       </div>
       <div className="flex justify-center flex-1">
         <img
-          src="/icon.png"
+          src="/images/bg.png"
           alt="Coding Illustration"
           className="w-full max-w-sm"
         />

@@ -54,7 +54,7 @@ const projects: Project[] = [
     title: "Eredit",
     description:
       "Ini merupakan project website yang dibuat saat kelas 11 dan terinspirasi dari reddit dengan versi yang bisa diakses oleh orang indonesia.",
-    imageUrl: "/Project1.jpg",
+    imageUrl: "/Images/Project1.jpg",
     techStack: ["React", "TailwindCSS", "NextJS"],
     projectLink: "https://eredit.vercel.app/",
   },
@@ -62,15 +62,15 @@ const projects: Project[] = [
     title: "Web Class",
     description:
       "Website ini dibuat saat kelas 11, website ini khusus digunakan oleh siswa RPL3 agar bisa mengenang kegiatan dan melihat jadwal mata pelajaran atau piket.",
-    imageUrl: "/Project2.jpg",
+    imageUrl: "/Images/Project2.jpg",
     techStack: ["React", "JavaScript", "TailwindCSS"],
     projectLink: "https://xii-rpl3.vercel.app/",
   },
   {
     title: "Smart Attendance",
     description:
-      "Pada kelas 3 ini atau kelas 12, kita membuat aplikasi untuk absensi kepada perusahaan-perusahaan agar lebih efesiensi waktu.",
-    imageUrl: "/Project3.jpg",
+      "Pada kelas 3 atau kelas 12, kita membuat aplikasi untuk absensi kepada perusahaan-perusahaan agar lebih efesiensi waktu.",
+    imageUrl: "/Images/Project3.jpg",
     techStack: ["React", "Typescript", "TailwindCSS"],
     projectLink: "https://smart-att.curaweda.com/",
   },
