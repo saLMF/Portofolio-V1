@@ -4,11 +4,11 @@ module.exports = {
     extend: {
       height: {
         100: "100px",
-        200: "200px", // Add any height you need
+        200: "200px",
       },
       width: {
         100: "100px",
-        200: "200px", // Add any width you need
+        200: "200px",
       },
     },
   },
