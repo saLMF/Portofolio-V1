@@ -83,7 +83,7 @@ const ContactForm: React.FC = () => {
 
   useEffect(() => {
     if (state.succeeded) {
-      handleFormReset(); // Mengosongkan form setelah submit sukses
+      handleFormReset();
     }
   }, [state.succeeded]);
 
