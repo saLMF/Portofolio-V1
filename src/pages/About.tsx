@@ -12,6 +12,18 @@ const AboutMe: React.FC = () => {
     AOS.refresh();
   }, []);
 
+  const generateStars = (count: number) => {
+    return Array.from({length: count}, (_, i) => ({
+      id: i,
+      cx: Math.random() * 100,
+      cy: Math.random() * 100,
+      r: Math.random() * 0.2 + 0.1,
+      animationDelay: Math.random() * 3,
+    }));
+  };
+
+  const stars = generateStars(200);
+
   const handleDownload = (): void => {
     const fileUrl =
       "https://drive.google.com/file/d/1Cp2pUMJX5KEt9r9pdRgkQwjPQkojg96V/view?usp=drive_link";
@@ -34,6 +46,52 @@ const AboutMe: React.FC = () => {
       id="about"
       className="relative px-10 py-10 text-white bg-black"
     >
+      {/* Background Starfield Effect */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <svg
+          className="absolute w-full h-full"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <radialGradient
+              id="starGlow"
+              cx="50%"
+              cy="50%"
+              r="50%"
+            >
+              <stop
+                offset="0%"
+                stopColor="white"
+                stopOpacity="1"
+              />
+              <stop
+                offset="100%"
+                stopColor="white"
+                stopOpacity="0"
+              />
+            </radialGradient>
+          </defs>
+
+          <g className="animate-spin-slow">
+            {stars.map((star) => (
+              <circle
+                key={star.id}
+                cx={`${star.cx}%`}
+                cy={`${star.cy}%`}
+                r={star.r}
+                fill="white"
+                className="animate-twinkle"
+                style={{
+                  animationDelay: `${star.animationDelay}s`,
+                  opacity: Math.random() * 0.7 + 0.3,
+                }}
+              />
+            ))}
+          </g>
+        </svg>
+      </div>
+
       {/* Top Wave Connection */}
       <div className="absolute top-0 left-0 right-0 overflow-hidden">
         <svg
@@ -68,18 +126,15 @@ const AboutMe: React.FC = () => {
               <stop
                 offset="0%"
                 stopColor="#6B46C1"
-              />{" "}
-              {/* Grape */}
+              />
               <stop
                 offset="50%"
                 stopColor="#9F7AEA"
-              />{" "}
-              {/* Medium Purple */}
+              />
               <stop
                 offset="100%"
                 stopColor="#E9D5FF"
-              />{" "}
-              {/* Lavender */}
+              />
             </linearGradient>
           </defs>
         </svg>
@@ -139,7 +194,6 @@ const AboutMe: React.FC = () => {
 
       {/* Mobile View */}
       <div className="flex flex-col items-center md:hidden">
-        {/* Mobile content remains the same */}
         <h2
           className="mb-6 text-2xl font-bold text-center"
           data-aos="fade-up"

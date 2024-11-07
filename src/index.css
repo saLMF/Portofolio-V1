@@ -69,6 +69,23 @@ body {
   }
 }
 
+.animate-rotate {
+  animation: rotate-star 20s linear infinite;
+}
+
+.animate-spin-fast {
+  animation: spin 5s linear infinite; /* Sesuaikan durasi animasi (5s) sesuai kebutuhan */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Enhanced star animations */
 .twinkle-1 {
   animation: twinkle 3.5s ease-in-out infinite; /* Slightly slower, smoother easing */
