@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import {useForm, ValidationError} from "@formspree/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -8,10 +8,13 @@ const ContactForm: React.FC = () => {
   const [selectedSocial, setSelectedSocial] = useState<string>("instagram");
   const [state, handleSubmit] = useForm("mrbzwqno");
 
+  // Ref untuk input fields
+  const emailRef = useRef<HTMLInputElement>(null);
+  const subjectRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
+    AOS.init({duration: 1000});
   }, []);
 
   const handleSocialClick = (social: string) => {
@@ -71,6 +74,18 @@ const ContactForm: React.FC = () => {
       />
     ));
   };
+
+  const handleFormReset = () => {
+    if (emailRef.current) emailRef.current.value = "";
+    if (subjectRef.current) subjectRef.current.value = "";
+    if (messageRef.current) messageRef.current.value = "";
+  };
+
+  useEffect(() => {
+    if (state.succeeded) {
+      handleFormReset(); // Mengosongkan form setelah submit sukses
+    }
+  }, [state.succeeded]);
 
   return (
     <section
@@ -152,6 +167,7 @@ const ContactForm: React.FC = () => {
                       Email
                     </label>
                     <input
+                      ref={emailRef}
                       id="email"
                       type="email"
                       name="email"
@@ -173,6 +189,7 @@ const ContactForm: React.FC = () => {
                       Subject
                     </label>
                     <input
+                      ref={subjectRef}
                       id="subject"
                       type="text"
                       name="subject"
@@ -189,6 +206,7 @@ const ContactForm: React.FC = () => {
                       Message
                     </label>
                     <textarea
+                      ref={messageRef}
                       id="message"
                       name="message"
                       required
