@@ -54,6 +54,7 @@ const Navbar: React.FC = () => {
                 onClick={() => scrollToSection("contact")}
               />
             </div>
+
             {/* Mobile Menu */}
             <div className="flex md:hidden">
               <NavButton

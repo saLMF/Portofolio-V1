@@ -64,14 +64,14 @@ const projects: Project[] = [
     techStack: ["React", "JavaScript", "TailwindCSS"],
     projectLink: "https://xii-rpl3.vercel.app/",
   },
-  {
-    title: "Smart Attendance",
-    description:
-      "Pada kelas 3 atau kelas 12, kita membuat aplikasi untuk absensi kepada perusahaan-perusahaan agar lebih efesiensi waktu.",
-    imageUrl: "/images/Project3.jpg",
-    techStack: ["React", "Typescript", "TailwindCSS"],
-    projectLink: "https://smart-att.curaweda.com/",
-  },
+  // {
+  //   title: "Smart Attendance",
+  //   description:
+  //     "Pada kelas 3 atau kelas 12, kita membuat aplikasi untuk absensi kepada perusahaan-perusahaan agar lebih efesiensi waktu.",
+  //   imageUrl: "/images/Project3.jpg",
+  //   techStack: ["React", "Typescript", "TailwindCSS"],
+  //   projectLink: "https://smart-att.curaweda.com/",
+  // },
 ];
 
 const Projects: React.FC = () => {

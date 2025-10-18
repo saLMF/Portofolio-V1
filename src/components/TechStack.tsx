@@ -60,11 +60,6 @@ const TechStack = () => {
       icon: "/images/Vue.png",
       subtitle: "Beginner",
     },
-    {
-      name: "MySql",
-      icon: "/images/Mysql.png",
-      subtitle: "Beginner",
-    },
   ];
 
   return (

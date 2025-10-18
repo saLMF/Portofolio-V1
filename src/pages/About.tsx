@@ -12,21 +12,9 @@ const AboutMe: React.FC = () => {
     AOS.refresh();
   }, []);
 
-  const generateStars = (count: number) => {
-    return Array.from({length: count}, (_, i) => ({
-      id: i,
-      cx: Math.random() * 100,
-      cy: Math.random() * 100,
-      r: Math.random() * 0.2 + 0.1,
-      animationDelay: Math.random() * 3,
-    }));
-  };
-
-  const stars = generateStars(200);
-
   const handleDownload = (): void => {
     const fileUrl =
-      "https://drive.google.com/file/d/1Cp2pUMJX5KEt9r9pdRgkQwjPQkojg96V/view?usp=drive_link";
+      "https://drive.google.com/file/d/1FuPGZhHHbhzkUdGfAMI4IAPL02Bdg8cG/view?usp=drive_link";
     window.open(fileUrl, "_blank");
   };
 
@@ -72,23 +60,6 @@ const AboutMe: React.FC = () => {
               />
             </radialGradient>
           </defs>
-
-          <g className="animate-spin-slow">
-            {stars.map((star) => (
-              <circle
-                key={star.id}
-                cx={`${star.cx}%`}
-                cy={`${star.cy}%`}
-                r={star.r}
-                fill="white"
-                className="animate-twinkle"
-                style={{
-                  animationDelay: `${star.animationDelay}s`,
-                  opacity: Math.random() * 0.7 + 0.3,
-                }}
-              />
-            ))}
-          </g>
         </svg>
       </div>
 
@@ -164,13 +135,13 @@ const AboutMe: React.FC = () => {
           data-aos="fade-up"
         >
           <p className="mt-20 mb-16 text-xl leading-relaxed">
-            Nama saya adalah Faisal Maulud Fajri, seorang siswa SMKN 4 Bandung
-            dari kelas industri yang menekuni bidang Rekayasa Perangkat Lunak
-            dengan fokus pada pengembangan front-end web. Saya memiliki tekad
-            yang kuat untuk terus belajar dan mengasah keterampilan saya demi
-            mencapai kesempurnaan. Selalu berusaha untuk menemukan solusi
-            terbaik dalam setiap proyek yang saya kerjakan dan memiliki minat
-            besar di bidang front-end web.
+            Nama saya adalah Faisal Maulud Fajri, seorang mahasiswa dari
+            Universitas Komputer Indonesia "UNIKOM" yang sedang menekuni bidang
+            Teknik Informatika dengan fokus pada pengembangan front-end web.
+            Saya memiliki tekad yang kuat untuk terus belajar dan mengasah
+            keterampilan saya demi mencapai kesempurnaan. Selalu berusaha untuk
+            menemukan solusi terbaik dalam setiap proyek yang saya kerjakan dan
+            memiliki minat besar di bidang front-end web.
           </p>
           <DownloadButton />
           <div className="flex flex-row w-full max-w-lg space-x-4">
