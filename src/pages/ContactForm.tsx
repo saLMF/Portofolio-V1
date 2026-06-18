@@ -26,7 +26,7 @@ const ContactForm: React.FC = () => {
       case "instagram":
         return "/images/IG.jpeg";
       case "github":
-        return "/images/GitSS.jpeg";
+        return "/images/GITHUB.jpeg";
       default:
         return "/path-to-your-image/default-image.png";
     }

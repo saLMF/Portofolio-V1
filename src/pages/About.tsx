@@ -135,13 +135,12 @@ const AboutMe: React.FC = () => {
           data-aos="fade-up"
         >
           <p className="mt-20 mb-16 text-xl leading-relaxed">
-            Nama saya adalah Faisal Maulud Fajri, seorang mahasiswa dari
+            Nama saya adalah Faisal Maulud Fazry, seorang mahasiswa dari
             Universitas Komputer Indonesia "UNIKOM" yang sedang menekuni bidang
-            Teknik Informatika dengan fokus pada pengembangan front-end web.
-            Saya memiliki tekad yang kuat untuk terus belajar dan mengasah
-            keterampilan saya demi mencapai kesempurnaan. Selalu berusaha untuk
-            menemukan solusi terbaik dalam setiap proyek yang saya kerjakan dan
-            memiliki minat besar di bidang front-end web.
+            Teknik Informatika. Saya memiliki tekad yang kuat untuk terus
+            belajar dan mengasah keterampilan saya demi mencapai kesempurnaan.
+            Selalu berusaha untuk menemukan solusi terbaik dalam setiap proyek
+            yang saya kerjakan dan memiliki minat besar di bidang front-end web.
           </p>
           <DownloadButton />
           <div className="flex flex-row w-full max-w-lg space-x-4">
@@ -149,8 +148,8 @@ const AboutMe: React.FC = () => {
               className="flex-1 p-6 text-center text-white rounded-lg shadow-lg bg-gray-800/50 backdrop-blur-sm"
               data-aos="fade-up"
             >
-              <h3 className="text-3xl font-bold">2+</h3>
-              <p className="text-xl">Years of Experience</p>
+              <h3 className="text-3xl font-bold">8+</h3>
+              <p className="text-xl">Months of Experience</p>
             </div>
             <div
               className="flex-1 p-6 text-center text-white rounded-lg shadow-lg bg-gray-800/50 backdrop-blur-sm"
@@ -184,13 +183,12 @@ const AboutMe: React.FC = () => {
           data-aos="fade-up"
         >
           <p className="mb-8 text-lg leading-relaxed">
-            Nama saya adalah Faisal Maulud Fajri, seorang siswa SMKN 4 Bandung
-            dari kelas industri yang menekuni bidang Rekayasa Perangkat Lunak
-            dengan fokus pada pengembangan front-end web. Saya memiliki tekad
-            yang kuat untuk terus belajar dan mengasah keterampilan saya demi
-            mencapai kesempurnaan. Selalu berusaha untuk menemukan solusi
-            terbaik dalam setiap proyek yang saya kerjakan dan memiliki minat
-            besar di bidang front-end web.
+            Nama saya adalah Faisal Maulud Fazry, seorang mahasiswa dari
+            Universitas Komputer Indonesia "UNIKOM" yang sedang menekuni bidang
+            Teknik Informatika. Saya memiliki tekad yang kuat untuk terus
+            belajar dan mengasah keterampilan saya demi mencapai kesempurnaan.
+            Selalu berusaha untuk menemukan solusi terbaik dalam setiap proyek
+            yang saya kerjakan dan memiliki minat besar di bidang front-end web.
           </p>
 
           {/* Download CV Button for Mobile */}
@@ -208,8 +206,8 @@ const AboutMe: React.FC = () => {
             className="p-6 text-center text-white bg-gray-800 rounded-lg shadow-lg"
             data-aos="fade-up"
           >
-            <h3 className="text-3xl font-bold">2+</h3>
-            <p className="text-xl">Years of Experience</p>
+            <h3 className="text-3xl font-bold">8+</h3>
+            <p className="text-xl">Months of Experience</p>
           </div>
           <div
             className="p-6 text-center text-white bg-gray-800 rounded-lg shadow-lg"
